@@ -1,7 +1,8 @@
 @charset "utf-8";
 * {box-sizing:border-box;}
 body, main, header, nav, article {
-    margin:0;padding:0;
+    margin:0;
+    padding:0;
 }
 header, nav, article, footer { border:1px solid gray;} 
 body {
@@ -28,7 +29,7 @@ legend, div {
     flex: 0 0 100%;
 }
 div {
-     display:flex;
+    display:flex;
     flex-direction: row;
     flex-wrap:nowrap;
 }
@@ -46,5 +47,5 @@ label {
     text-align:center;
     font-weight:bold;
     font-size:40px;
-        padding:0 1px 0 13px;
+    padding:0 1px 0 13px;
 }
