@@ -1,11 +1,26 @@
-szamolas();
 
 var valtA = document.getElementById("a").value;
 var valtB = document.getElementById("b").value;
-var valtM = document.getElementById("muvjel").value;
-var osszeg = 0;
 
+function osszeadas() {
+    var osszeg = Number(valtA) + Number(valtB);
+    document.getElementById("szoveg").innerHTML = osszeg;
+}
+function kivonas() {
+    var osszeg = Number(valtA) - Number(valtB);
+    document.getElementById("szoveg").innerHTML = osszeg;
+}
+function szorzas() {
+    var osszeg = Number(valtA) * Number(valtB);
+    document.getElementById("szoveg").innerHTML = osszeg;
+}
+function osztas() {
+    var osszeg = Number(valtA) / Number(valtB);
+    document.getElementById("szoveg").innerHTML = osszeg;
+}
 function szamolas() {
+
+    var valtM = document.getElementById("muvjel").value;
     if (valtM === "+") {
         osszeadas();
     } else if (valtM === "-") {
@@ -16,17 +31,4 @@ function szamolas() {
         osztas();
     }
     document.getElementById("szoveg").innerHTML = osszeg;
-}
-
-function osszeadas() {
-    osszeg = Number(valtA) + Number(valtB);
-}
-function kivonas() {
-    osszeg = Number(valtA) - Number(valtB);
-}
-function szorzas() {
-    osszeg = Number(valtA) * Number(valtB);
-}
-function osztas() {
-    osszeg = Number(valtA) / Number(valtB);
 }
